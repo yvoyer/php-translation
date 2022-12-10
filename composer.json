@@ -1,0 +1,32 @@
+{
+    "name": "star/php-translation",
+    "description": "Simple package for handling translation of properties in an object.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-mbstring": "*",
+        "beberlei/assert": "^2.0|^3.0"
+    },
+    "require-dev":{
+        "phpunit/phpunit": ">=8.0",
+        "phpstan/phpstan": "^1.0",
+        "squizlabs/php_codesniffer": "^3.0",
+        "phpstan/phpstan-phpunit": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Star\\Component\\Translation\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Star\\Component\\Translation\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "bin-dir": "bin/",
+        "sort-package": true
+    }
+}
